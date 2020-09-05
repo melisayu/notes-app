@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>My Notes</title>
+    <link href="/notes-icon.png" rel="icon">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="left-sidebar">
+      <button id="create-note" class="button_add"></button>
+      <div class="color-pick">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+    </div>
+    <div class="actions">
+        <div class="actions_container">
+          <div>
+            <input id="search-text" type="type" class="input" placeholder="Search notes">
+          </div>
+          <select id="filter-by" class="dropdown">
+            <option value="byEdited">Sort by last edited</option>
+            <option value="byCreated">Sort by recently created</option>
+            <option value="alphabetical">Sort alphabetically</option>
+          </select> 
+        </div>
+    </div>
+    <div class="container">
+      <h1>Notes</h1>
+      <div id="notes"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="notes-functions.js"></script>
+    <script src="notes-app.js"></script>
+  </body>
+</html>
